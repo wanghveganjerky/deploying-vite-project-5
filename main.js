@@ -6,7 +6,7 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 const textContainer = document.querySelector('.text-container');
 const textItems = textContainer.querySelectorAll('.text-item');
 const toggleButtons = document.querySelectorAll('.toggle-button');
-const canvas = document.querySelector('canvas.webgl')
+const canvas = document.querySelector('canvas.webgl');
 const scene = new THREE.Scene();
 const clock = new THREE.Clock();
 const gltfLoader = new GLTFLoader();
@@ -169,12 +169,47 @@ document.getElementById("myButton").addEventListener("click", function(){
 });
 
 
-window.addEventListener("load", function () {
-  document.getElementById("loading-screen").style.display = "none";
-  document.getElementById("main-content").style.display = "block";
+// window.addEventListener("load", function () {
+//   document.getElementById("loading-screen").style.display = "none";
+//   document.getElementById("main-content").style.display = "block";
+// });
+
+
+const oldButton = document.querySelector("#oldButton");
+const textToToggle = document.querySelector("#textToToggle");
+
+
+
+oldButton.addEventListener("click", function() {
+  if (textToToggle.style.display === "none") {
+    textToToggle.style.display = "block";
+  } else {
+    textToToggle.style.display = "none";
+  }
 });
 
 
-export default {
-  public: ['computer']
-}
+document.getElementById("big-button").addEventListener("click", function() {
+  window.location.href = "https://js.f22.href.blue/";
+});
+
+document.getElementById("big-button2").addEventListener("click", function() {
+  window.location.href = "https://a-generative-web.com/";
+});
+
+document.getElementById("big-button3").addEventListener("click", function() {
+  window.location.href = "https://courses.newschool.edu/courses/LMTH2080/7800/";
+});
+
+
+document.getElementById("classButton1").addEventListener("click", function() {
+  window.location.href = "https://www.newschool.edu/parsons/bfa-communication-design/";
+});
+
+document.getElementById("classButton2").addEventListener("click", function() {
+  window.location.href = "https://www.newschool.edu/parsons/bfa-communication-design/";
+});
+
+document.getElementById("classButton3").addEventListener("click", function() {
+  window.location.href = "https://www.newschool.edu/parsons/bfa-communication-design/";
+});

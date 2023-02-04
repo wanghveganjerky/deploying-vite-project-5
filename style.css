@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+
 body {
 background-color: black;
 }
@@ -8,23 +10,29 @@ h1 {
 
 h2 {
   color: white;
+  font-family: 'Rowdies';
+  font-size: 40px;
 }
+
 
 .toggle-container {
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 30%;
+  width: auto;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
+  
 }
 
 .toggle-item {
   margin: 0px 0;
+  border: 1px dotted red;
+  
 }
 
 .toggle-button {
@@ -36,8 +44,13 @@ h2 {
   cursor: pointer;
   height: 30vh;
   width: 35vh;
+  transition: background-color 0.3s ease-in-out;
 }
-
+.toggle-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 .text-container {
   margin: 10px 0 0 30%;
   text-align: center;
@@ -61,7 +74,7 @@ h2 {
 .webgl{
   position: relative;
   outline: none;
-  background-color: black;
+  background-color: blue;
 }
 
 #loading-screen {
@@ -125,4 +138,101 @@ section.two .container{
 
 html{
   scroll-snap-type: y mandatory;
+}
+
+
+.oldButton {
+  background-color: #5e738b;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #2c3e50;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+}
+
+.old-button:hover {
+  background-color: #34495e;
+  cursor: pointer;
+}
+
+#big-button {
+  width: 200px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position:fixed;
+  top:50%;
+  left:80%;
+}
+
+#big-button:hover {
+  background-color:grey;
+  cursor: pointer;
+}
+
+#big-button2 {
+  width: 200px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position:fixed;
+  top:50%;
+  left:40%;
+}
+
+#big-button2:hover {
+  background-color: rgba(128, 0, 128, 0.5);
+  cursor: pointer;
+}
+
+#big-button3 {
+  width: 200px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position:fixed;
+  top:50%;
+  left:60%;
+}
+
+#big-button3:hover {
+  background-color: rgba(0, 0, 255, 1);
+  cursor: pointer;
+}
+
+#classButton {
+  width: 300px;
+  height: 120px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#classButton:hover {
+  background-color: red;
+  cursor: pointer;
 }
