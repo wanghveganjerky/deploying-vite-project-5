@@ -211,5 +211,5 @@ document.getElementById("classButton2").addEventListener("click", function() {
 });
 
 document.getElementById("classButton3").addEventListener("click", function() {
-  window.location.href = "https://courses.newschool.edu/courses/LMTH2080/7800/";
+  window.location.href = "https://www.newschool.edu/parsons/bfa-communication-design/";
 });
