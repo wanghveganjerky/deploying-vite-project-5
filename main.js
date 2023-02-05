@@ -165,7 +165,7 @@ scene.add(lightHelper)
 
 
 document.getElementById("myButton").addEventListener("click", function(){
-  window.location.href = "https://www.google.com";
+  window.location.href = "https://github.com/wanghveganjerky/deploying-vite-project-5";
 });
 
 
