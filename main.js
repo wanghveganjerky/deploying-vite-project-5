@@ -164,15 +164,15 @@ scene.add(lightHelper)
 // Array(200).fill().forEach(addStar)
 
 
-document.getElementById("myButton").addEventListener("click", function(){
+document.getElementById("myButt").addEventListener("click", function(){
   window.location.href = "https://github.com/wanghveganjerky/deploying-vite-project-5";
 });
 
 
-window.addEventListener("load", function () {
-  document.getElementById("loading-screen").style.display = "none";
-  document.getElementById("main-content").style.display = "block";
-});
+// window.addEventListener("load", function () {
+//   document.getElementById("loading-screen").style.display = "none";
+//   document.getElementById("main-content").style.display = "block";
+// });
 
 
 const oldButton = document.querySelector("#oldButton");
@@ -213,3 +213,5 @@ document.getElementById("classButton2").addEventListener("click", function() {
 document.getElementById("classButton3").addEventListener("click", function() {
   window.location.href = "https://www.newschool.edu/parsons/bfa-communication-design/";
 });
+
+
