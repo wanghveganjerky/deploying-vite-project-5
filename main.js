@@ -11,6 +11,11 @@ const scene = new THREE.Scene();
 const clock = new THREE.Clock();
 const gltfLoader = new GLTFLoader();
 
+const text = document.querySelector('.circleText h5');
+text.innerHTML = text.innerText.split('').map(
+    (char, i) =>
+    `<span style = "transform:rotate(${i * 8.3}deg)">${char}</span>`
+    ).join('');
 
 let mixer;
 let model = null;
